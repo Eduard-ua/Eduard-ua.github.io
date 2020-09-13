@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<title>Rybalka</title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="shortcut icon" href="images/icons/shortcut.png">
+
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                   <a class="logo header__logo" href="#">
+                       <img class="logo__fish" src="images/icons/fish_for_logo.png" alt="Litle fish">
+                   </a>
+                   <nav class="menu">
+<!--                       <i class="fas fa-hamburger"></i>-->
+                       <div class="hamburger__container" onclick="burgerMenu(this)">
+                           <div class="hamburger__bar1"></div>
+                           <div class="hamburger__bar2"></div>
+                           <div class="hamburger__bar3"></div>
+                       </div>
+                        <ul class="menu__list">
+                           <li class="menu__item"><a class="menu__link" href="#about_me">Обо мне</a></li>
+                           <li class="menu__item"><a class="menu__link" href="#my_study">Мое обучение</a></li>
+                           <li class="menu__item"><a class="menu__link" href="#my_works">Мои работы</a></li>
+                           <li class="menu__item"><a class="menu__link" href="#my_contacts">Контакты</a></li>
+                       </ul>
+                   </nav>
+                </div>
+            </div>
+        </header> <!--   header  -->
+        
+        <section class="title">
+           <div class="container">
+               <div class="title__wrapper">
+                    <div class="preview title__preview">
+                        <h1 class="preview__header">
+                            Junior Web-development
+                        </h1>
+                        <p  class="preview__text">
+                            CSS, HTML, LESS, немного Javascript
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- Title -->
+        
+        <section class="user">
+            <div class="container">
+                <h2 class="section-title">Кто я?</h2>
+                <div class="user__wrapper">
+                    <img class="user__photo" src="images/user.jpg" alt="Eduard Rybalka photo">
+                    <div class="user__description">
+                        <p class="user__description-title">
+                            Эдуард Рыбалка<br>работаю как бессмертный пони
+                        </p>
+                        <img  class="user__description-arrow" src="images/icons/user_arrow2.png" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title" id="about_me">Обо Мне</h2>              
+                <div class="about__wrapper">
+                    <div class="about__item">
+                        <h3 class="about__title">Немного о себе</h3>
+                        <div class="about__img about__img-first"></div>
+                        <div class="about__description">Выполняю адаптивную и кросбраузерную вёрстку сайтов. Верстаю при пмощи препроцессора Less. Могу сдулать дизайн сайта на Тильде. Но это не основной вид деятельности </div>
+                    </div>
+                    <div class="about__item">
+                        <h3 class="about__title">Знания и умения </h3>
+                        <div class="about__img about__img-second"></div>
+                        <div class="about__description">Знаю якызи разметки HTML & CSS. Практикуюсь с язіком программированния JavaScript. Постепенно изучаю PHP и натяжку сайтов на Wordpress.</div>
+                    </div>
+                    <div class="about__item">
+                        <h3 class="about__title">Самообразование</h3>
+                        <div class="about__img about__img-third"></div>
+                        <div class="about__description">Постоянно работаю над усовершенствованием своих навыком. Учусь на образовательных площадках COURSERA, Нетология, GeekBrains, HtmlAcademy.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills">
+            <div class="container">
+               <h2 class="section-title">Навыки</h2>
+                <div class="skills__wrapper">
+                    <div class="skills__item">
+                        <div class="skills__img skills__img-html"></div>
+                        <h3 class="skills__title">HTML</h3>
+                        <p class="skills__text">88%</p>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__img  skillsp__img-css"></div>
+                        <h3 class="skills__title">CSS</h3>
+                        <p class="skills__text">85%</p>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__img  skills__img-js"></div>
+                        <h3 class="skills__title">JS</h3>
+                        <p class="skills__text">45%</p>
+                    </div>
+                    
+                    <div class="skills__item">
+                        <div class="skills__img skills__img-php"></div>
+                        <h3 class="skills__title">PHP</h3>
+                        <p class="skills__text">25%</p>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__img skills__img-less"></div>
+                        <h3 class="skills__title">Less</h3>
+                        <p class="skills__text">45%</p>
+                    </div>
+<!--
+                    <div class="skills__item">
+                        <div class="skills__img"></div>
+                        <h3 class="skills__title">WordPress</h3>
+                        <p class="skills__text">45%</p>
+                    </div>
+-->
+                </div>
+            </div>
+        </section>
+        
+        <section class="study">
+            <div class="container">
+                <h2 class="section-title" id="my_study">Моё обучение</h2>
+            </div>
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/Introduction%20to%20HTML%20Coursera.jpg" alt="Sertificate Coursera HTML">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/Introduction%20to%20css%20Coursera.jpg" alt="Sertificate Coursera CSS">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/Introduction%20to%20JavaScript%20Coursera.jpg" alt="Sertificate Coursera JS">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/Responsive%20web-design%20(Coursera).jpg" alt="Sertificate Coursera Responsive design">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/tilda_min.jpg" alt="Secrificate tilda designer">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20HTML%20&%20CSS%20(GeekBrains)%20en%20gold.jpg" alt="certificate Geekbrains. Introduction to HTML & CSS">
+                        </div>
+                        <div class="slider__item">
+                            <img class="slider_image" src="images/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20HTML%20%D0%B8%20CSS%20(%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F).jpg" alt="certificate Netology group. Introduction to HTML & CSS">
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+            </div>
+        </section>
+        
+        <section class="works">
+            <div class="container">
+                <h2 class="section-title" id="my_works">Мои работы</h2>
+                <p class="works__section-paragraph">Все мои начальные работы без отзывчивого дизайна. Кроме того в ниж можно встретить немного JavaScript</p>
+                <div class="works__wrapper">
+                    <a href="works/culture_news/index.html" class="works__item" target="_blank">
+                        <img src="images/Preview_first_portfolio.jpg" alt="Screenshot of first portfolio website with beautiful sunset" class="works__preview">
+                        <h3 class="works__title">Первое портфолио</h3>
+                        <p class="works__description">Моё первое портфолио. Сделано по макету. Даже есть переключатель на тёмную тему)</p>
+                    </a>
+                    <a href="works/culture_news/index.html" class="works__item" target="_blank">
+                        <img src="images/Preview_culture_news.jpg" alt="Screenshot of culture news website with  underwater hotel" class="works__preview">
+                        <h3 class="works__title">Новости культуры</h3>
+                        <p class="works__description">Сделан в рамках марафона по вёрстке с htmlacademy.ru</p> 
+                    </a>
+                    <a href="works/gamers_club_master/index.html" class="works__item" target="_blank">
+                        <img src="images/Preview_gaming.jpg" alt="Screenshot of gamers club website with with different games" class="works__preview">
+                        <h3 class="works__title">Сайт гейминга</h3>
+                        <p class="works__description">А этот сделан на обучающей платформе (не помню какой)...</p> 
+                    </a>
+                    <a class="works__item" href="works/need_for_JS/index.html" target="_blank">
+                        <img src="images/Preview_need_for_js.jpg" alt="Screenshot with two cars on the road. top view" class="works__preview">
+                        <h3 class="works__title">Игра на JS</h3>
+                        <p class="works__description">Игра "Need for JS" написана на JavaScript. Пожалуйста играйте в неё на стационарном ПК.</p>
+                    </a>
+                    </div>
+            </div>            
+        </section>
+        
+        <section class="contacts">
+            <div class="container">
+                <h2 class="section-title" id="my_contacts">Контакты</h2>
+                <div class="contacts__wrapper">
+                    <div class="contacts__adress adress">
+                        <a class="adress__link adress__phone" href="tel:+380630180803">+380-63-018-0803</a>
+                        <a class="adress__link adress__mail" href="mailto:marshalrybalka@gmail.com" >marshalrybalka@gmail.com</a>
+                    </div>
+                    <div class="contacts__calendar">
+                        <p class="contacts__calendar-caption">Мои свободные дни</p>
+                        <iframe class="frame" src="https://calendar.google.com/calendar/embed?height=350&amp;wkst=2&amp;bgcolor=%237CB342&amp;ctz=Africa%2FMaputo&amp;src=bmxmbDExYThkczVkc2c0dnJwOW5pNzV2ZTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=cnUuY2QjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D50000&amp;color=%230B8043&amp;showNav=1&amp;showTabs=0&amp;showCalendars=0&amp;showTitle=0" style="border-width:0" width="400" height="350"></iframe>
+<!-- стили из календаря :frameborder="0" scrolling="no"-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+		<section class="route-map">
+		    <div class="route-map__wrapper">
+		        <h2 class="section-title">Где меня найти</h2>
+		        <iframe class="route-map__contacts" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15952.26623728842!2d29.235670566558838!3d-1.6979089231312707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2scd!4v1588683007330!5m2!1suk!2scd" height="298" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		    </div>
+		</section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+           <div class="footer__wrapper">
+               <div class="footer__contacts">
+                   <h3 class="contacts__title">Жду Вашего сообщения</h3>
+                   <a class="footer__link footer__phone" href="tel:+380630180803"><i class="fas fa-phone-alt"></i>+380-63-018-0803</a>
+                   <a class="footer__link footer__mail" href="mailto:marshalrybalka@gmail.com"><i class="fas fa-at"></i>marshalrybalka@gmail.com</a>
+               </div>
+               <p class="footer__copiright">Все права защищены</p>
+               <div class="footer__social-items">
+<!--                  <h3 class="contacts__title footer__social-title">Мы в соцсетях</h3><br>-->
+                   <a class="footer__social-item footer__social-fb" href="https://www.facebook.com/profile.php?id=100003826791138"><i class="fab fa-facebook-f"></i></a>
+                   <a  class="footer__social-item footer__social-vk" href="https://vk.com/marshal_rybalka"><i class="fab fa-vk"></i></a>
+                   <a  class="footer__social-item footer__social-ins" href="https://www.instagram.com/edikrybalka/"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+        </div>
+    </footer>
+    <button class="up-button" type="button">
+    ↑
+        <span class="visually-hidden">Наверх</span>
+    </button>
+
+<script src="https://kit.fontawesome.com/ddf42b563a.js" crossorigin="anonymous"></script>
+<script src="js/scroll_to_anchor.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/up-button.js"></script>
+<script src="js/main.js"></script>
+<script>
+	slideShow('.slider', {
+		isAutoplay: true
+	});
+  </script>
+</body>
+</html>
